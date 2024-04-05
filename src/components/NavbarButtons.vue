@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BrandGithub, BrandTwitter, InfoCircle, Moon, Sun } from '@vicons/tabler';
+import { BrandGithub, Overline, InfoCircle, Moon, Sun } from '@vicons/tabler';
 import { useStyleStore } from '@/stores/style.store';
 
 const styleStore = useStyleStore();
@@ -11,7 +11,7 @@ const { isDarkTheme } = toRefs(styleStore);
     <c-button
       circle
       variant="text"
-      href="https://github.com/CorentinTh/it-tools"
+      href="https://github.com/yihuaxiang/it-tools"
       target="_blank"
       rel="noopener noreferrer"
       :aria-label="$t('home.nav.githubRepository')"
@@ -20,16 +20,16 @@ const { isDarkTheme } = toRefs(styleStore);
     </c-button>
   </c-tooltip>
 
-  <c-tooltip :tooltip="$t('home.nav.twitter')" position="bottom">
+  <c-tooltip tooltip="敖武的博客" position="bottom">
     <c-button
       circle
       variant="text"
-      href="https://twitter.com/ittoolsdottech"
+      href="https://z.wiki"
       rel="noopener"
       target="_blank"
-      :aria-label="$t('home.nav.twitterAccount')"
+      :aria-label="敖武的博客"
     >
-      <n-icon size="25" :component="BrandTwitter" />
+      <n-icon size="25" :component="Overline" />
     </c-button>
   </c-tooltip>
 
