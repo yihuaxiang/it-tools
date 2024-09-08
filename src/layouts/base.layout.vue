@@ -84,6 +84,9 @@ const tools = computed<ToolCategory[]>(() => [
             <c-link target="_blank" href="https://z.wiki">
               敖武的博客
             </c-link>
+            <c-link target="_blank" href="https://beian.miit.gov.cn/">
+              京ICP备2021035392号-5
+            </c-link>
           </div>
         </div>
       </div>
